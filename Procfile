@@ -1,1 +1,1 @@
-web: ts-node ./dist/index.js
+web: yarn start
