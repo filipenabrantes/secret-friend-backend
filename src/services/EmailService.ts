@@ -18,9 +18,10 @@ class EmailService {
         };
 
         const transporter = nodemailer.createTransport({
-            host: config.host,
-            port: config.port,
-            secure: false,
+            // host: config.host,
+            // port: config.port,
+            // secure: false,
+            service: 'gmail',
             auth: {
                 user: config.user,
                 pass: config.password
