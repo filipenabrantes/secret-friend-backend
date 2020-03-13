@@ -14,16 +14,7 @@ class EmailService {
             from: "filipenabrantes@gmail.com",
             to: this.to,
             subject: 'Sorteio Amigo Secreto',
-            html:
-                `
-             <style> 
-                msg {
-                    background-color: red
-                }
-             </style>
-                <h3 class="msg">Seu amigo secreto é: ${this.message} <h3>
-                `,
-            template: 'index'
+            html: `<h3 class="msg">Seu amigo secreto é: ${this.message} <h3>`
         };
 
         const transporter = nodemailer.createTransport({
